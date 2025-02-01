@@ -1,0 +1,3 @@
+# Expo Linking API Deep Link Handling Issue
+
+This repository demonstrates a bug related to Expo's `Linking` API where deep link handling is unreliable when the app is in the background or closed. The `Linking.addEventListener` method does not always trigger as expected, causing deep links to be missed.  The solution involves using a combination of `Linking.addEventListener` and `Linking.getInitialURL` to ensure that deep links are captured in all scenarios.
